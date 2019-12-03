@@ -1,0 +1,167 @@
+.info-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.reviews {
+  width: 265px;
+  margin-right: 0;
+  order: 1;
+}
+.info-title {
+  font-family: "Playfair Display", serif;
+  font-size: 36px;
+  line-height: 2.778;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 0.29px;
+  margin-bottom: 10px;
+}
+.review-item {
+  border-bottom: 1px solid rgb(231, 231, 231);
+  margin-bottom: 25px;
+  position: relative;
+  &::before {
+    position: absolute;
+    top: 0;
+    left: -18px;
+    content: "";
+    display: block;
+    width: 36px;
+    height: 29px;
+    background-image: url("../../img/1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+  }
+}
+.review-text {
+  font-size: 16px;
+  color: rgb(153, 153, 153);
+  line-height: 1.938;
+  text-align: left;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+.review-author {
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  line-height: 1.938;
+  text-align: left;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.video {
+  width: 280px;
+}
+.video-item {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+.play-icon {
+  position: relative;
+  width: 56px;
+  height: 56px;
+  background-color: white;
+  border-radius: 50px;
+  &::before {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -4px;
+    margin-top: -5.5px;
+    content: "";
+    display: block;
+    width: 0px;
+    height: 0px;
+    border-top: 5.5px solid transparent;
+    border-bottom: 5.5px solid transparent;
+    border-left: 8px solid black;
+  }
+}
+.video-item .play-icon {
+  position: absolute;
+  left: -10px;
+  bottom: -12px;
+}
+.video-center {
+  position: relative;
+  order: -1;
+  img {
+    width: 100%;
+  }
+}
+.video-center .play-icon {
+  position: absolute;
+  left: 24px;
+  bottom: 32px;
+}
+
+@media (min-width: 630px) {
+  .info-block {
+    margin-bottom: 100px;
+  }
+  .video {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+  .video-item {
+    width: 280px;
+    margin-right: 15px;
+  }
+  .info-title {
+    width: 100%;
+  }
+  .reviews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+  .review-item {
+    width: 265px;
+    margin-right: 15px;
+  }
+}
+@media (min-width: 1300px) {
+  .info-block {
+    width: 1250px;
+    flex-direction: row;
+    margin-bottom: 230px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .video-center {
+    order: 0;
+  }
+  .reviews {
+    order: 0;
+    margin-right: 15px;
+  }
+  .info-title {
+    text-align: left;
+    margin-bottom: 45px;
+  }
+  .video {
+    width: 280px;
+  }
+  .video-item {
+    margin-right: 0px;
+  }
+  .reviews {
+    width: 265px;
+  }
+  .review-item {
+    margin-right: 0px;
+  }
+}

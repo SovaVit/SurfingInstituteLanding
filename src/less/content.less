@@ -1,0 +1,169 @@
+.container {
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header-1 {
+  font-family: "Playfair Display", serif;
+  line-height: 2;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 400;
+  letter-spacing: 0.41px;
+  margin-top: 0px;
+  margin-bottom: 25px;
+  color: black;
+}
+.instructors {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.instructor_photo {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.instructor_name {
+  font-family: "Playfair Display", serif;
+  color: rgb(0, 0, 0);
+  line-height: 2;
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 0.28px;
+}
+.instructor_students {
+  font-size: 15px;
+  color: rgb(42, 183, 56);
+  line-height: 2;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.blog-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+.blog-image {
+  text-align: center;
+  img {
+    width: 100%;
+  }
+}
+.blog-item-content {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.blog-header {
+  font-size: 30px;
+  font-family: "Playfair Display", serif;
+  color: rgb(0, 0, 0);
+  font-style: italic;
+  line-height: 2.1;
+  text-align: center;
+  letter-spacing: 0.3px;
+  margin-bottom: 20px;
+}
+.blog-desc {
+  font-size: 16px;
+  color: rgb(68, 68, 68);
+  line-height: 1.938;
+  margin-right: 10px;
+  letter-spacing: 0.06px;
+  margin-bottom: 25px;
+}
+.blog-readmo {
+  display: inline-block;
+  height: 52px;
+  border: 1px solid rgb(229, 229, 229);
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 0.06px;
+  padding: 16px 30px;
+  line-height: 1;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  transition: all 0.2s ease-in;
+
+  &:hover {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+  }
+}
+.text-center {
+  text-align: center;
+  margin-bottom: 145px;
+}
+.nb-70 {
+  margin-bottom: 75px !important;
+}
+.button {
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid rgb(65, 71, 91);
+  height: 56px;
+  letter-spacing: 0.06px;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+  line-height: 1;
+  background-color: white;
+  padding: 18px 45px;
+  transition: all 0.2s ease-in;
+
+  &:hover {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+  }
+}
+@media (min-width: 620px) {
+  .instructor_photo {
+    text-align: center;
+  }
+}
+@media (min-width: 950px) {
+  .container {
+    width: 1055px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .header-1 {
+    font-size: 50px;
+    margin-bottom: 85px;
+  }
+  .instructors {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 255px;
+  }
+  .instructor_students {
+    margin-bottom: 0;
+  }
+  .blog-item {
+    justify-content: space-between;
+    margin-bottom: 175px;
+    flex-direction: row;
+  }
+  .blog-header {
+    font-size: 40px;
+    text-align: left;
+  }
+  .blog-image {
+    width: 523px;
+  }
+  .blog-item-content {
+    width: 455px;
+    margin-bottom: 0px;
+  }
+  .blog-desc {
+    margin-right: 30px;
+    margin-bottom: 50px;
+  }
+}
