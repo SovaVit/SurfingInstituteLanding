@@ -4,7 +4,7 @@
   "description": "Webpack for front projects",
   "main": "index.js",
   "dependencies": {
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "npm": "^6.13.1"
   },
   "devDependencies": {
